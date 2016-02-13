@@ -79,7 +79,7 @@ public class Snake {
 		lblMondo.setText("mondo");
 		
 		Label lblBach = new Label(shell, SWT.NONE);
-		lblBach.setBounds(331, 70, 55, 15);
+		lblBach.setBounds(355, 29, 55, 15);
 		lblBach.setText("bach");
 		
 		Label lblCioano = new Label(shell, SWT.NONE);
