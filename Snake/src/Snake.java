@@ -66,7 +66,7 @@ public class Snake {
 		Canvas canvas = new Canvas(shell, SWT.NONE);
 		canvas.setBackground(SWTResourceManager.getColor(SWT.COLOR_WHITE));	
 		Label lblPatrick = new Label(shell, SWT.NONE);
-		lblPatrick.setBounds(20, 62, 55, 15);
+		lblPatrick.setBounds(110, 10, 55, 45);
 		lblPatrick.setText("Patrick");
 		canvas.setBounds(10, 110, 514, 342);
 		
@@ -81,6 +81,10 @@ public class Snake {
 		Label lblBach = new Label(shell, SWT.NONE);
 		lblBach.setBounds(331, 70, 55, 15);
 		lblBach.setText("bach");
+		
+		Label lblCioano = new Label(shell, SWT.NONE);
+		lblCioano.setBounds(110, 81, 55, 15);
+		lblCioano.setText("cioano");
 
 	}
 }
