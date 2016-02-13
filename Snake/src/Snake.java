@@ -5,10 +5,12 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.widgets.Canvas;
 import org.eclipse.wb.swt.SWTResourceManager;
+import org.eclipse.swt.widgets.Text;
 
 public class Snake {
 
 	protected Shell shell;
+	private Text txtCiao;
 
 	/**
 	 * Launch the application.
@@ -64,6 +66,10 @@ public class Snake {
 		Canvas canvas = new Canvas(shell, SWT.NONE);
 		canvas.setBackground(SWTResourceManager.getColor(SWT.COLOR_WHITE));
 		canvas.setBounds(10, 110, 514, 342);
+		
+		txtCiao = new Text(shell, SWT.BORDER);
+		txtCiao.setText("ciao");
+		txtCiao.setBounds(10, 55, 76, 21);
 
 	}
 }
