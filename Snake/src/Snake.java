@@ -64,7 +64,10 @@ public class Snake {
 		list.setBounds(432, 29, 92, 75);
 		
 		Canvas canvas = new Canvas(shell, SWT.NONE);
-		canvas.setBackground(SWTResourceManager.getColor(SWT.COLOR_WHITE));
+		canvas.setBackground(SWTResourceManager.getColor(SWT.COLOR_WHITE));	
+		Label lblPatrick = new Label(shell, SWT.NONE);
+		lblPatrick.setBounds(20, 62, 55, 15);
+		lblPatrick.setText("Patrick");
 		canvas.setBounds(10, 110, 514, 342);
 		
 		txtCiao = new Text(shell, SWT.BORDER);
