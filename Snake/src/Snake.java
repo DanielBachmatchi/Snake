@@ -3,6 +3,8 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.List;
+import org.eclipse.swt.widgets.Canvas;
+import org.eclipse.wb.swt.SWTResourceManager;
 
 public class Snake {
 
@@ -58,6 +60,10 @@ public class Snake {
 		
 		List list = new List(shell, SWT.BORDER);
 		list.setBounds(432, 29, 92, 75);
+		
+		Canvas canvas = new Canvas(shell, SWT.NONE);
+		canvas.setBackground(SWTResourceManager.getColor(SWT.COLOR_WHITE));
+		canvas.setBounds(10, 110, 514, 342);
 
 	}
 }
