@@ -70,6 +70,14 @@ public class Snake {
 		txtCiao = new Text(shell, SWT.BORDER);
 		txtCiao.setText("ciao");
 		txtCiao.setBounds(10, 55, 76, 21);
+		
+		Label lblMondo = new Label(shell, SWT.NONE);
+		lblMondo.setBounds(189, 70, 55, 15);
+		lblMondo.setText("mondo");
+		
+		Label lblBach = new Label(shell, SWT.NONE);
+		lblBach.setBounds(331, 70, 55, 15);
+		lblBach.setText("bach");
 
 	}
 }
