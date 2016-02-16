@@ -6,11 +6,11 @@ import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.widgets.Canvas;
 import org.eclipse.wb.swt.SWTResourceManager;
 import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.widgets.Button;
 
 public class Snake {
 
 	protected Shell shell;
-	private Text txtCiao;
 
 	/**
 	 * Launch the application.
@@ -45,7 +45,7 @@ public class Snake {
 	 */
 	protected void createContents() {
 		shell = new Shell();
-		shell.setSize(550, 500);
+		shell.setSize(721, 500);
 		shell.setText("SWT Application");
 		
 		Label lblSnake = new Label(shell, SWT.NONE);
@@ -57,34 +57,35 @@ public class Snake {
 		lblPunteggio.setText("Punteggio");
 		
 		Label lblClassifica = new Label(shell, SWT.NONE);
-		lblClassifica.setBounds(457, 10, 67, 15);
+		lblClassifica.setBounds(575, 68, 67, 15);
 		lblClassifica.setText("Classifica");
 		
 		List list = new List(shell, SWT.BORDER);
-		list.setBounds(432, 29, 92, 75);
+		list.setBounds(564, 110, 92, 342);
 		
 		Canvas canvas = new Canvas(shell, SWT.NONE);
-		canvas.setBackground(SWTResourceManager.getColor(SWT.COLOR_WHITE));	
-		Label lblPatrick = new Label(shell, SWT.NONE);
-		lblPatrick.setBounds(110, 10, 55, 45);
-		lblPatrick.setText("Patrick");
+		canvas.setBackground(SWTResourceManager.getColor(SWT.COLOR_WHITE));
 		canvas.setBounds(10, 110, 514, 342);
 		
-		txtCiao = new Text(shell, SWT.BORDER);
-		txtCiao.setText("ciao");
-		txtCiao.setBounds(10, 55, 76, 21);
+		Label lblInspunteggio = new Label(shell, SWT.NONE);
+		lblInspunteggio.setBounds(262, 45, 84, 15);
+		lblInspunteggio.setText("InsPunteggio");
 		
-		Label lblMondo = new Label(shell, SWT.NONE);
-		lblMondo.setBounds(331, 89, 55, 15);
-		lblMondo.setText("mondo");
+		Button btnNewButton = new Button(shell, SWT.NONE);
+		btnNewButton.setBounds(85, 21, 40, 25);
+		btnNewButton.setText("UP");
 		
-		Label lblBach = new Label(shell, SWT.NONE);
-		lblBach.setBounds(355, 29, 55, 15);
-		lblBach.setText("bach");
+		Button btnRight = new Button(shell, SWT.NONE);
+		btnRight.setBounds(131, 40, 40, 25);
+		btnRight.setText("RIGHT");
 		
-		Label lblCioano = new Label(shell, SWT.NONE);
-		lblCioano.setBounds(231, 70, 55, 15);
-		lblCioano.setText("cioano");
+		Button btnLeft = new Button(shell, SWT.NONE);
+		btnLeft.setBounds(38, 45, 40, 25);
+		btnLeft.setText("LEFT");
+		
+		Button btnDown = new Button(shell, SWT.NONE);
+		btnDown.setBounds(85, 68, 40, 25);
+		btnDown.setText("DOWN");
 
 	}
 }
